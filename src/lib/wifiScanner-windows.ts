@@ -109,7 +109,7 @@ export class WindowsWifiActions implements WifiActions {
           // Fill in channel/band from scan (not available in connection attributes)
           current.channel = match.channel;
           current.band = match.band;
-          console.log(
+          console.debug(
             `DEBUG: rssi approximation was ${current.rssi}, real BSS value is ${match.rssi}`,
           );
           current.rssi = match.rssi; // Real dBm value from the BSS scan, replacing the quality-based approximation
@@ -164,7 +164,7 @@ export class WindowsWifiActions implements WifiActions {
           if (match) {
             current.channel = match.channel;
             current.band = match.band;
-            console.log(
+            console.debug(
               `DEBUG: rssi approximation was ${current.rssi}, real BSS value is ${match.rssi}`,
             );
             current.rssi = match.rssi; // Real dBm value from the BSS scan
