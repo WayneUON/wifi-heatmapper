@@ -73,7 +73,7 @@ export default function ClickableFloorplan(): ReactNode {
         console.log(`image error`);
       };
     }
-  }, []);
+  }, [settings.floorplanImagePath]);
 
   /**
    * addTestPoint() - add a test point
